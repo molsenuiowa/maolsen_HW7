@@ -1,47 +1,117 @@
+
+
+
+
+
+
+
+
+
+
+
+#maolsen_p3.html
+/* Resets */
+body, h1, form, div {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    font-family: Arial, sans-serif; /* Makes text more readable */
-    max-width: 800px; /* Adjust based on your preference */
-    margin: auto; /* Centers the content */
-    padding: 20px; /* Adds some space inside the body, around the content */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
 }
 
+h1 {
+    color: #333;
+}
+
+/* Styles for the form */
 form {
-    display: flex;
-    flex-direction: column; /* Stacks form elements vertically */
-    gap: 20px; /* Adds space between form elements */
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-form div {
-    display: flex;
-    flex-direction: column; /* Aligns labels above input/select fields */
+label {
+    margin-top: 10px;
 }
 
-input, select {
-    padding: 10px; /* Adds space inside input/select elements */
-    margin-top: 5px; /* Adds space between the label and the input/select element */
+input[type="text"], input[type="radio"] {
+    margin: 5px 0 15px 0;
+    padding: 10px;
 }
 
+/* Styling the navigation */
 .navigation {
+    margin-top: 20px;
     display: flex;
-    justify-content: space-between; /* Positions the Page info and Next button on opposite ends */
-    align-items: center; /* Vertically aligns items in the container */
+    justify-content: space-between;
+    align-items: center;
 }
 
-.navigation .page-info {
-    flex: 1; /* Allows the page info to take up the space needed */
+.page-info {
+    background: #e0e0e0;
+    color: #555;
+    padding: 5px 10px;
+    border-radius: 5px;
 }
 
 .next-btn {
-    padding: 10px 20px; /* Adds padding inside the button for better sizing */
-    cursor: pointer; /* Changes cursor to pointer when hovering over the button */
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
 }
 
-/* Additional styling for aesthetics */
-label {
-    font-weight: bold; /* Makes labels more prominent */
+.next-btn:hover {
+    background-color: #45a049;
 }
 
-select, input[type="text"] {
-    border: 1px solid #ccc; /* Adds a subtle border to inputs and selects */
-    border-radius: 4px; /* Slightly rounds the corners of inputs and selects */
+/* Tooltip styling */
+span[title] {
+    border-bottom: 1px dotted;
+    cursor: help;
+}
+
+/* Enhancements */
+input[type="radio"] + label {
+    display: inline-block;
+    margin-left: -25px; /* Adjust as necessary */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    .navigation {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .next-btn {
+        width: 100%;
+    }
+}
+
+#maolsen_ty.html
+
+.thank-you-message h2 {
+    font-size: 5em; /* Makes the "Thank You!!" larger */
+    color: #4caf51; /* Change the color to something noticeable, example green */
+    margin-top: 22px;
+}
+
+.thank-you-message p {
+    font-size: 2em; /* Slightly larger paragraph text for emphasis */
+    margin-top: 10px;
 }
