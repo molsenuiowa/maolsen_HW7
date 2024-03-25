@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif; /* Makes text more readable */
+    max-width: 800px; /* Adjust based on your preference */
+    margin: auto; /* Centers the content */
+    padding: 20px; /* Adds some space inside the body, around the content */
+}
+
+form {
+    display: flex;
+    flex-direction: column; /* Stacks form elements vertically */
+    gap: 20px; /* Adds space between form elements */
+}
+
+form div {
+    display: flex;
+    flex-direction: column; /* Aligns labels above input/select fields */
+}
+
+input, select {
+    padding: 10px; /* Adds space inside input/select elements */
+    margin-top: 5px; /* Adds space between the label and the input/select element */
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between; /* Positions the Page info and Next button on opposite ends */
+    align-items: center; /* Vertically aligns items in the container */
+}
+
+.navigation .page-info {
+    flex: 1; /* Allows the page info to take up the space needed */
+}
+
+.next-btn {
+    padding: 10px 20px; /* Adds padding inside the button for better sizing */
+    cursor: pointer; /* Changes cursor to pointer when hovering over the button */
+}
+
+/* Additional styling for aesthetics */
+label {
+    font-weight: bold; /* Makes labels more prominent */
+}
+
+select, input[type="text"] {
+    border: 1px solid #ccc; /* Adds a subtle border to inputs and selects */
+    border-radius: 4px; /* Slightly rounds the corners of inputs and selects */
+}
